@@ -1,0 +1,19 @@
+<h1>Home du Projet</h1>
+
+
+
+<table>
+  <tr>
+    <th>Nickname</th>
+    <th>Content</th>
+  </tr>
+ 
+  <% @gossip.each do |gossips| %>
+    <tr>
+      <td><%= gossips.anonymous_author %></td>
+      <td><%= gossips.content %></td>
+    
+    </tr>
+  <% end %>
+<%= link_to 'créer', new_gossip_path %>
+</table>

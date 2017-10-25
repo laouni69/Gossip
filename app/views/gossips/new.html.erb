@@ -1,0 +1,9 @@
+<h1>Nouveau Gossip</h1>
+
+<%= form_tag (gossips_path) do %>
+   <%= label_tag 'title', 'Titre du Gossip' %>
+   <%= text_field_tag 'gossips[anonymous_author]' %>
+   <%= label_tag 'text','écriture du Gossip' %>
+   <%= text_area_tag 'gossips[content]' %>
+   <%= submit_tag "Créer"%>
+   <% end %>
